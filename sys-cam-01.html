@@ -1,0 +1,217 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>SYS: Cam 01</title>
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+</head>
+<style>
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+}
+body {
+  margin:0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #d2d2d2;
+}
+
+.cam-c {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 40px;
+  height: 40px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 100%;
+  background-color: #b8b3b2;
+  box-shadow: 1px 1px 1px 0 hsla(0, 0%, 100%, 0.2), inset 1px 1px 3px 0 rgba(0, 0, 0, 0.3), inset 3px 0 8px 0 rgba(0, 0, 0, 0.3);
+}
+
+.cam-div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 100%;
+  box-shadow: inset 14px 14px 20px 0 hsla(0, 0%, 100%, 0.3), inset -14px -14px 20px 0 rgba(0, 0, 0, 0.1), -14px -14px 20px 0 hsla(0, 0%, 100%, 0.3), 14px 14px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.i3b {
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  box-shadow: inset -7px -7px 10px 0 hsla(0, 0%, 100%, 0.3), inset 7px 7px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.cam-c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 27px;
+  height: 27px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border: 3px solid transparent;
+  border-radius: 100%;
+  background-color: #272726;
+}
+
+.i3a {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80px;
+  height: 80px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 100%;
+  background-color: #b8b3b2;
+  box-shadow: inset 7px 7px 10px 0 hsla(0, 0%, 100%, 0.3), inset -7px -7px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.cam-c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 20px;
+  height: 20px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 100%;
+  background-image: linear-gradient(135deg, #afafaf, #383737 30%, #afadad 51%, #707070 68%, #8a8a8a);
+}
+
+.cam-c4 {
+  width: 4px;
+  height: 4px;
+  border-radius: 100%;
+  box-shadow: -1px -1px 2px 0 #b198a3;
+}
+
+.cam-c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 18px;
+  height: 18px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 100%;
+  background-color: #1b1b1b;
+  box-shadow: none;
+}
+
+.cam {
+  position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100px;
+  height: 100px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 100%;
+  background-color: rgba(0, 0, 0, 0.05);
+  box-shadow: inset -14px -14px 20px 0 rgba(0, 0, 0, 0.01), inset 14px 14px 20px 0 hsla(0, 0%, 100%, 0.2);
+  -webkit-backdrop-filter: blur(1.8px);
+  backdrop-filter: blur(1.8px);
+}
+</style>
+<body class="bd">
+  <div class="cam-div">
+    <div class="cam">
+      <div class="cam-c">
+        <div class="cam-c1">
+          <div class="cam-c2">
+            <div class="cam-c3">
+              <div class="cam-c4"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="i3 _2 a">
+      <div class="i3 _3 a">
+        <div class="i3a">
+          <div class="i3b"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
